@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deine Webseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            text-align: right;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .link-box {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .link-box a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media Query für durchschnittliche Handygröße (z.B., max. Breite von 600px) */
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="dein-bild.jpg" alt="Header-Bild" style="max-width: 100%;">
+        <nav>
+            <a href="#">Kategorie 1</a>
+            <a href="#">Kategorie 2</a>
+            <a href="#">Kategorie 3</a>
+            <a href="#">Kategorie 4</a>
+            <a href="#">Kategorie 5</a>
+        </nav>
+    </header>
+
+    <section>
+        <p>Dein Text hier.</p>
+
+        <div class="link-box">
+            <a href="#">
+                <img src="bild1.jpg" alt="Link 1">
+                Link 1
+            </a>
+        </div>
+
+        <div class="link-box">
+            <a href="#">
+                <img src="bild2.jpg" alt="Link 2">
+                Link 2
+            </a>
+        </div>
+
+        <div class="link-box">
+            <a href="#">
+                <img src="bild3.jpg" alt="Link 3">
+                Link 3
+            </a>
+        </div>
+
+        <div class="link-box">
+            <a href="#">Link 4</a>
+        </div>
+
+        <div class="link-box">
+            <a href="#">Link 5</a>
+        </div>
+
+        <div class="link-box">
+            <a href="#">Link 6</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Deine Webseite. Alle Rechte vorbehalten.
+    </footer>
+
+</body>
+</html>
